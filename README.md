@@ -20,7 +20,7 @@ One can initiate a connection to the I2C-enabled LCD panel by doing:
 ```
 firmata := Firmata onPort: '/dev/ttyACM0' baudRate: 57600.
 
-firmataLcd := firmata lcdAt: 16r27 withColumns: 2 andRows: 16.
+firmataLcd := firmata lcdAt: 16r27 withColumns: 16 andRows: 2.
 firmataLcd init.
 ```
 We first need an instance of Firmata, which we get by calling `Firmata class>>#onPort:baudRate:`, after that we can send the         extension message `Firmata>>#lcdAt:withColumns:andRows:` to said instance (with the address, number of columns and number of rows your LCD panel has) and get back a `FirmataLiquidCrystalI2C`, which is the     main class of this package.
