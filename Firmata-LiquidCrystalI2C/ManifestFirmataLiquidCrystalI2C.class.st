@@ -1,6 +1,17 @@
 "
 Extension to the Pharo's implementation of Firmata (robvanlopik's fork) that adds support for i2c-enabled LCD panels.
 
+## Installation
+
+To load latest version of Firmata-LiquidCrystalI2C you can evaluate the following expression in playground:
+
+```
+Metacello new
+  baseline: 'FirmataLiquidCrystalI2C';
+  repository: 'github://joao-pedro-braz/Firmata-LiquidCrystalI2C:main';
+  load
+```
+
 ## How to use
 
 Most of this implementation is based off [johnrickman's LiquidCrystalI2C library](https://www.arduino.cc/reference/en/libraries/liquidcrystal-i2c/), which in turn is based off [Arduino's LiquidCrystal library](https://www.arduino.cc/reference/en/libraries/liquidcrystal/). Because I made sure to keep the APIs as compatible as possible, if you have any questions that aren't covered here, go check them out, chances are whatever you need to do have a compatible example there!
