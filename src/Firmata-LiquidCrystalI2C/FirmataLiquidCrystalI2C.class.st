@@ -202,9 +202,7 @@ FirmataLiquidCrystalI2C >> disableBacklight [
 	"I disable the backlight"
 
 	self backlightFlag: FirmataLiquidCrystalI2CConstants noBacklight.
-	self displayControlFlag:
-		self displayControlFlag | FirmataLiquidCrystalI2CConstants displayOff.
-	self sendCommand: self displayControlFlag
+	self sendCommand: 0
 ]
 
 { #category : #commands }
@@ -292,9 +290,7 @@ FirmataLiquidCrystalI2C >> enableBacklight [
 	"I enable the backlight"
 
 	self backlightFlag: FirmataLiquidCrystalI2CConstants backlight.
-	self displayControlFlag:
-		self displayControlFlag | FirmataLiquidCrystalI2CConstants displayOn.
-	self sendCommand: self displayControlFlag
+	self sendCommand: 0
 ]
 
 { #category : #commands }
