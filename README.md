@@ -3,7 +3,7 @@ Extension to the Pharo's implementation of Firmata (robvanlopik's fork) that add
 
 ## Installation
 
-To load latest version of Firmata-LiquidCrystalI2C you can evaluate the following expression in playground:
+To load the latest version of Firmata-LiquidCrystalI2C you can evaluate the following expression in playground:
 
 ```
 Metacello new
