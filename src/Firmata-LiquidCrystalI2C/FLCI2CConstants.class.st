@@ -4,13 +4,13 @@ I am a collection of constants.
 All I have are class-side messages that return some hex value.
 "
 Class {
-	#name : #FirmataLiquidCrystalI2CConstants,
+	#name : #FLCI2CConstants,
 	#superclass : #Object,
 	#category : #'Firmata-LiquidCrystalI2C-Implementation'
 }
 
 { #category : #'display entry modes' }
-FirmataLiquidCrystalI2CConstants class >> autoscroll [
+FLCI2CConstants class >> autoscroll [
 
 	"I return the hex value for enabling autoscroll"
 	
@@ -18,7 +18,7 @@ FirmataLiquidCrystalI2CConstants class >> autoscroll [
 ]
 
 { #category : #backlight }
-FirmataLiquidCrystalI2CConstants class >> backlight [
+FLCI2CConstants class >> backlight [
 
 	"I return the ON backlight hex value"
 
@@ -26,7 +26,7 @@ FirmataLiquidCrystalI2CConstants class >> backlight [
 ]
 
 { #category : #'display control' }
-FirmataLiquidCrystalI2CConstants class >> blinkOff [
+FLCI2CConstants class >> blinkOff [
 
 	"I return the hex value for turning the cursor blinking off"
 	
@@ -34,7 +34,7 @@ FirmataLiquidCrystalI2CConstants class >> blinkOff [
 ]
 
 { #category : #'display control' }
-FirmataLiquidCrystalI2CConstants class >> blinkOn [
+FLCI2CConstants class >> blinkOn [
 
 	"I return the hex value for turning the cursor blinking on"
 	
@@ -42,7 +42,7 @@ FirmataLiquidCrystalI2CConstants class >> blinkOn [
 ]
 
 { #category : #commands }
-FirmataLiquidCrystalI2CConstants class >> clearDisplay [
+FLCI2CConstants class >> clearDisplay [
 
 	"I return the hex value for clearing the display"
 
@@ -50,7 +50,7 @@ FirmataLiquidCrystalI2CConstants class >> clearDisplay [
 ]
 
 { #category : #'display/cursor shift' }
-FirmataLiquidCrystalI2CConstants class >> cursorMove [
+FLCI2CConstants class >> cursorMove [
 
 	"I return the mask hex value that indicates the cursor should be moved (as oposed to the display)"
 
@@ -58,7 +58,7 @@ FirmataLiquidCrystalI2CConstants class >> cursorMove [
 ]
 
 { #category : #'display control' }
-FirmataLiquidCrystalI2CConstants class >> cursorOff [
+FLCI2CConstants class >> cursorOff [
 
 	"I return the hex value for turning the cursor off"
 	
@@ -66,7 +66,7 @@ FirmataLiquidCrystalI2CConstants class >> cursorOff [
 ]
 
 { #category : #'display control' }
-FirmataLiquidCrystalI2CConstants class >> cursorOn [
+FLCI2CConstants class >> cursorOn [
 
 	"I return the hex value for turning the cursor on"
 	
@@ -74,7 +74,7 @@ FirmataLiquidCrystalI2CConstants class >> cursorOn [
 ]
 
 { #category : #commands }
-FirmataLiquidCrystalI2CConstants class >> cursorShift [
+FLCI2CConstants class >> cursorShift [
 
 	"I return the mask hex value for altering cursor properties"
 
@@ -82,7 +82,7 @@ FirmataLiquidCrystalI2CConstants class >> cursorShift [
 ]
 
 { #category : #'enable/disable' }
-FirmataLiquidCrystalI2CConstants class >> disableBit [
+FLCI2CConstants class >> disableBit [
 
 	"I return the mask hex value for enabling the LCD"
 
@@ -90,7 +90,7 @@ FirmataLiquidCrystalI2CConstants class >> disableBit [
 ]
 
 { #category : #commands }
-FirmataLiquidCrystalI2CConstants class >> displayControl [
+FLCI2CConstants class >> displayControl [
 
 	"I return the mask hex value for altering display properties"
 
@@ -98,7 +98,7 @@ FirmataLiquidCrystalI2CConstants class >> displayControl [
 ]
 
 { #category : #'display/cursor shift' }
-FirmataLiquidCrystalI2CConstants class >> displayMove [
+FLCI2CConstants class >> displayMove [
 
 	"I return the mask hex value that indicates the display should be moved (as oposed to the cursor)"
 
@@ -106,7 +106,7 @@ FirmataLiquidCrystalI2CConstants class >> displayMove [
 ]
 
 { #category : #'display control' }
-FirmataLiquidCrystalI2CConstants class >> displayOff [
+FLCI2CConstants class >> displayOff [
 
 	"I return the hex value for turning the display off"
 
@@ -114,7 +114,7 @@ FirmataLiquidCrystalI2CConstants class >> displayOff [
 ]
 
 { #category : #'display control' }
-FirmataLiquidCrystalI2CConstants class >> displayOn [
+FLCI2CConstants class >> displayOn [
 
 	"I return the hex value for turning the display on"
 
@@ -122,7 +122,7 @@ FirmataLiquidCrystalI2CConstants class >> displayOn [
 ]
 
 { #category : #'function set' }
-FirmataLiquidCrystalI2CConstants class >> eightBitMode [
+FLCI2CConstants class >> eightBitMode [
 
 	"I return the 8 bit function mode set hex value"
 
@@ -130,7 +130,7 @@ FirmataLiquidCrystalI2CConstants class >> eightBitMode [
 ]
 
 { #category : #'enable/disable' }
-FirmataLiquidCrystalI2CConstants class >> enableBit [
+FLCI2CConstants class >> enableBit [
 
 	"I return the mask hex value for enabling the LCD"
 
@@ -138,7 +138,7 @@ FirmataLiquidCrystalI2CConstants class >> enableBit [
 ]
 
 { #category : #'display entry modes' }
-FirmataLiquidCrystalI2CConstants class >> entryLeft [
+FLCI2CConstants class >> entryLeft [
 
 	"I return the hex value for the left display entry mode"
 
@@ -146,7 +146,7 @@ FirmataLiquidCrystalI2CConstants class >> entryLeft [
 ]
 
 { #category : #commands }
-FirmataLiquidCrystalI2CConstants class >> entryModeSet [
+FLCI2CConstants class >> entryModeSet [
 
 	"I return the mask hex value for setting entry modes"
 
@@ -154,7 +154,7 @@ FirmataLiquidCrystalI2CConstants class >> entryModeSet [
 ]
 
 { #category : #'display entry modes' }
-FirmataLiquidCrystalI2CConstants class >> entryRight [
+FLCI2CConstants class >> entryRight [
 
 	"I return the hex value for the right display entry mode"
 
@@ -162,7 +162,7 @@ FirmataLiquidCrystalI2CConstants class >> entryRight [
 ]
 
 { #category : #'function set' }
-FirmataLiquidCrystalI2CConstants class >> fiveByEightDots [
+FLCI2CConstants class >> fiveByEightDots [
 
 	"I return the 5x8 Dots function mode set hex value"
 
@@ -170,7 +170,7 @@ FirmataLiquidCrystalI2CConstants class >> fiveByEightDots [
 ]
 
 { #category : #'function set' }
-FirmataLiquidCrystalI2CConstants class >> fiveByTenDots [
+FLCI2CConstants class >> fiveByTenDots [
 
 	"I return the 5x10 Dots function mode set hex value"
 
@@ -178,7 +178,7 @@ FirmataLiquidCrystalI2CConstants class >> fiveByTenDots [
 ]
 
 { #category : #'function set' }
-FirmataLiquidCrystalI2CConstants class >> fourBitMode [
+FLCI2CConstants class >> fourBitMode [
 
 	"I return the 4 bit function mode set hex value"
 
@@ -186,7 +186,7 @@ FirmataLiquidCrystalI2CConstants class >> fourBitMode [
 ]
 
 { #category : #commands }
-FirmataLiquidCrystalI2CConstants class >> functionSet [
+FLCI2CConstants class >> functionSet [
 
 	"I return the mask hex value for settings the display mode"
 
@@ -194,7 +194,7 @@ FirmataLiquidCrystalI2CConstants class >> functionSet [
 ]
 
 { #category : #'display/cursor shift' }
-FirmataLiquidCrystalI2CConstants class >> moveLeft [
+FLCI2CConstants class >> moveLeft [
 
 	"I return the hex value that moves either the display or the cursor to the left"
 
@@ -202,7 +202,7 @@ FirmataLiquidCrystalI2CConstants class >> moveLeft [
 ]
 
 { #category : #'display/cursor shift' }
-FirmataLiquidCrystalI2CConstants class >> moveRight [
+FLCI2CConstants class >> moveRight [
 
 	"I return the hex value that moves either the display or the cursor to the right"
 
@@ -210,7 +210,7 @@ FirmataLiquidCrystalI2CConstants class >> moveRight [
 ]
 
 { #category : #backlight }
-FirmataLiquidCrystalI2CConstants class >> noBacklight [
+FLCI2CConstants class >> noBacklight [
 
 	"I return the OFF backlight hex value"
 
@@ -218,7 +218,7 @@ FirmataLiquidCrystalI2CConstants class >> noBacklight [
 ]
 
 { #category : #'function set' }
-FirmataLiquidCrystalI2CConstants class >> oneLine [
+FLCI2CConstants class >> oneLine [
 
 	"I return the 1 line function mode set hex value"
 
@@ -226,7 +226,7 @@ FirmataLiquidCrystalI2CConstants class >> oneLine [
 ]
 
 { #category : #commands }
-FirmataLiquidCrystalI2CConstants class >> returnHome [
+FLCI2CConstants class >> returnHome [
 
 	"I return the hex value for returning the cursor to the home column"
 
@@ -234,7 +234,7 @@ FirmataLiquidCrystalI2CConstants class >> returnHome [
 ]
 
 { #category : #commands }
-FirmataLiquidCrystalI2CConstants class >> setCGRAMAddr [
+FLCI2CConstants class >> setCGRAMAddr [
 
 	"I return the mask hex value for setting the first 8 CGRAM locations with custom characters"
 
@@ -242,7 +242,7 @@ FirmataLiquidCrystalI2CConstants class >> setCGRAMAddr [
 ]
 
 { #category : #commands }
-FirmataLiquidCrystalI2CConstants class >> setDDRAMAddr [
+FLCI2CConstants class >> setDDRAMAddr [
 
 	"I return the mask hex value for setting the cursor position"
 
@@ -250,7 +250,7 @@ FirmataLiquidCrystalI2CConstants class >> setDDRAMAddr [
 ]
 
 { #category : #'function set' }
-FirmataLiquidCrystalI2CConstants class >> twoLine [
+FLCI2CConstants class >> twoLine [
 
 	"I return the 2 line function mode set hex value"
 

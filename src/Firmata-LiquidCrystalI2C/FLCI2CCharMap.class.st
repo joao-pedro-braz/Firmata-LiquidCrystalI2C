@@ -5,7 +5,7 @@ I store binary data about the representation of a LCD character.
 I know what a valid character looks like.
 I actively validate what's given to me, as to only allow valid instances to be constructed.
 
-I collaborate with `FirmataLiquidCrystalI2C` on the `FirmataLiquidCrystalI2C>>#saveCustomChar:at:` message.
+I collaborate with `FirmataLCI2C` on the `FirmataLCI2C>>#saveCustomChar:at:` message.
 
 
 ## Public API and Key Messages
@@ -13,7 +13,7 @@ I collaborate with `FirmataLiquidCrystalI2C` on the `FirmataLiquidCrystalI2C>>#s
 - newFrom:
     Try to create an instance of myself, fail if the provided data is invalid.
 - how to create instances
-    `FirmataCharMap newFrom: #(
+    `FLCI2CCharMap newFrom: #(
       2r10001
       2r10001
       2r10001
@@ -32,10 +32,10 @@ I collaborate with `FirmataLiquidCrystalI2C` on the `FirmataLiquidCrystalI2C>>#s
 
 
 ### Implementation Points
-	charMap is ensured (if I'm constructed with the class `FirmataLiquidCrystalI2CCharMap class>>#newFrom:` message) to be valid (exactly 8 entries).
+	charMap is ensured (if I'm constructed with the class `FLCI2CCharMap class>>#newFrom:` message) to be valid (exactly 8 entries).
 "
 Class {
-	#name : #FirmataLiquidCrystalI2CCharMap,
+	#name : #FLCI2CCharMap,
 	#superclass : #Object,
 	#instVars : [
 		'charMap'
@@ -44,7 +44,7 @@ Class {
 }
 
 { #category : #'instance creation' }
-FirmataLiquidCrystalI2CCharMap class >> newFrom: aByteArray [
+FLCI2CCharMap class >> newFrom: aByteArray [
 
 	"I initialize a new FirmataCharMap from the given ByteArray"
 
@@ -57,7 +57,7 @@ FirmataLiquidCrystalI2CCharMap class >> newFrom: aByteArray [
 ]
 
 { #category : #testing }
-FirmataLiquidCrystalI2CCharMap class >> validate: aByteArray [
+FLCI2CCharMap class >> validate: aByteArray [
 
 	"I validate the given byte array"
 
@@ -66,13 +66,13 @@ FirmataLiquidCrystalI2CCharMap class >> validate: aByteArray [
 ]
 
 { #category : #accessing }
-FirmataLiquidCrystalI2CCharMap >> charMap [
+FLCI2CCharMap >> charMap [
 
 	^ charMap
 ]
 
 { #category : #accessing }
-FirmataLiquidCrystalI2CCharMap >> charMap: anObject [
+FLCI2CCharMap >> charMap: anObject [
 
 	charMap := anObject
 ]

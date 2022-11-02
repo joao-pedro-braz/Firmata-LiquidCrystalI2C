@@ -11,7 +11,7 @@ FirmataLiquidCrystalI2CCharMapTest >> testInvalidInstanceFails [
 
 	self
 		should: [ 
-			FirmataLiquidCrystalI2CCharMap newFrom:
+			FLCI2CCharMap newFrom:
 				#( 2r0 ) ]
 		raise: Error
 ]
@@ -21,6 +21,6 @@ FirmataLiquidCrystalI2CCharMapTest >> testValidInstanceCanBeConstructed [
 
 	"I test if when provided with valid data an instance can be constructed"
 
-	FirmataLiquidCrystalI2CCharMap newFrom:
+	FLCI2CCharMap newFrom:
 		#( 2r11111 2r10000 2r10000 2r11111 2r00001 2r00001 2r00001 2r11111 )
 ]

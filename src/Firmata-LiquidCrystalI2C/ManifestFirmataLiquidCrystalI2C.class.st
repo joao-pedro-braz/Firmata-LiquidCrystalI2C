@@ -23,8 +23,8 @@ firmata := Firmata onPort: '/dev/ttyACM0' baudRate: 57600.
 firmataLcd := firmata lcdAt: 16r27 withColumns: 2 andRows: 16.
 firmataLcd init.
 ```
-We first need an instance of Firmata, which we get by calling `Firmata class>>#onPort:baudRate:`, after that we can send the         extension message `Firmata>>#lcdAt:withColumns:andRows:` to said instance (with the address, number of columns and number of rows your LCD panel has) and get back a `FirmataLiquidCrystalI2C`, which is the     main class of this package.
-Remember to call `FirmataLiquidCrystalI2C>>#init` to ready the LCD panel (See also `FirmataLiquidCrystalI2C>>#init:` and `FirmataLiquidCrystalI2C>>#begin`).
+We first need an instance of Firmata, which we get by calling `Firmata class>>#onPort:baudRate:`, after that we can send the extension message `Firmata>>#lcdAt:withColumns:andRows:` to said instance (with the address, number of columns and number of rows your LCD panel has) and get back a `FirmataLCI2C`, which is the main class of this package.
+Remember to call `FirmataLCI2C>>#init` to ready the LCD panel (See also `FirmataLCI2C>>#init:` and `FirmataLCI2C>>#begin`).
 
 With the LCD panel initiated, the World's your oyster.
 You can than do things like:
@@ -83,7 +83,7 @@ firmataLcd setCursor: 14@1.
 ```
 - Save custom characters to the LCD memory and print them:
 ```
-charMap := FirmataLiquidCrystalI2CCharMap newFrom: #(
+charMap := FirmataLCI2CCharMap newFrom: #(
    2r11111
    2r10000
    2r10000
