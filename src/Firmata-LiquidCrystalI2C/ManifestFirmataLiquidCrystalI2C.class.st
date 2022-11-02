@@ -104,3 +104,10 @@ Class {
 	#superclass : #PackageManifest,
 	#category : #'Firmata-LiquidCrystalI2C-Manifest'
 }
+
+{ #category : #'code-critics' }
+ManifestFirmataLiquidCrystalI2C class >> ruleBadMessageRule2V1FalsePositive [
+
+	^ #( #( #( #RGMethodDefinition #( #FLCI2CConfig #extend: #false ) )
+	        #'2022-11-02T00:28:27.63281-03:00' ) )
+]
