@@ -27,7 +27,7 @@ We first need an instance of Firmata, which we get by calling `Firmata class>>#o
 Remember to call `FirmataLiquidCrystalI2C>>#init` to ready the LCD panel (See also `FirmataLiquidCrystalI2C>>#init:` and `FirmataLiquidCrystalI2C>>#begin`).
 
 With the LCD panel initiated, the World's your oyster.
-You can than do things like:
+You can then do things like:
 
 - Print 'Hello World':
 ```
